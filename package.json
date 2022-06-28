@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "watch": "tsc-watch --onSuccess \"node --inspect ./dist/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
