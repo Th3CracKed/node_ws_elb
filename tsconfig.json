@@ -1,0 +1,44 @@
+{
+    "files": [
+        "src/index.ts"
+    ],
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "src/**/*.spec.ts",
+        "src/**/*.backup.ts",
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "target": "es2017",
+        "lib": [
+            "ES2017",
+            "DOM"
+        ],
+        "types": [
+            "node"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "rootDir": "src",
+        "sourceMap": true,
+        "baseUrl": ".",
+        "allowJs": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "paths": {
+            "*": [
+                "node_modules/@types/*",
+                "./server/types/*"
+            ]
+        }
+    }
+}
